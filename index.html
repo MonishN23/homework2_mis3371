@@ -21,15 +21,15 @@
         <table>
             <tr>
                 <td><label for="firstName">First Name:</label></td>
-                <td><input type="text" id="firstName" name="firstName" maxlength="30" title="Enter your first name" required></td>
+                <td><input type="text" id="firstName" name="firstName" maxlength="30" required pattern="[A-Za-z]+"  title="Enter your first name" required></td>
             </tr>
             <tr>
                 <td><label for="middleName">Middle Name:</label></td>
-                <td><input type="text" id="middleName" name="middleName" maxlength="30" title="Enter your middle name"></td>
+                <td><input type="text" id="middleName" name="middleName" maxlength="30" required pattern="[A-Za-z]+" title="Enter your middle name"></td>
             </tr>
             <tr>
                 <td><label for="lastName">Last Name:</label></td>
-                <td><input type="text" id="lastName" name="lastName" maxlength="30" title="Enter your last name" required></td>
+                <td><input type="text" id="lastName" name="lastName" maxlength="30" required pattern="[A-Za-z]+"  title="Enter your last name" required></td>
             </tr>
             <tr>
                 <td><label for="dob">DOB:</label></td>
@@ -132,7 +132,7 @@
                 </td>
             </tr>
             <tr>
-                <td><label for="salary">Desired Salary:</label></td>
+                <td><label for="salary">Household Income:</label></td>
                 <td>
                     <input type="range" id="salary" name="salary" min="20000" max="200000" step="1000" oninput="updateSalary(this.value)">
                     <span id="salaryDisplay">$20,000</span>
@@ -181,7 +181,7 @@
             <p><strong>Zip Code:</strong> <span id="reviewZip"></span></p>
             <p><strong>Diseases:</strong> <span id="reviewDisease"></span></p>
             <p><strong>Vaccination Status:</strong> <span id="reviewVaccinationStatus"></span></p>
-            <p><strong>Desired Salary:</strong> <span id="reviewSalary"></span></p>
+            <p><strong>Household Income:</strong> <span id="reviewSalary"></span></p>
             <p><strong>Email:</strong> <span id="reviewEmail"></span></p>
             <p><strong>Symptoms:</strong> <span id="reviewSymptoms"></span></p>
             <p><strong>Username:</strong> <span id="reviewUsername"></span></p>
